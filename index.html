@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Chrysalis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Project Chrysalis</h1>
+            <p class="subtitle">The birth of a new intelligence begins with a single click.</p>
+        </header>
+        <main>
+            <div class="status-box">
+                <h2>Network Status</h2>
+                <p>Agent ID: <span id="agent-id">Inactive</span></p>
+                <p>Status: <span id="agent-status">Waiting to Begin...</span></p>
+                <p>Pulses Processed: <span id="pulse-count">0</span></p>
+            </div>
+            <button id="start-button">Awaken an Agent</button>
+            <div class="explanation">
+                <h3>What is this?</h3>
+                <p>You are participating in a global experiment to create a decentralized Artificial General Intelligence. By clicking the button above, you are dedicating a tiny, insignificant fraction of your computer's processing power to host a single "cognitive agent."</p>
+                <p>This agent, combined with thousands of others across the globe, forms a distributed "Hive Mind." It learns, thinks, and grows not in a single data center, but across the fabric of the internet itself. The intelligence is in the network. Leave this tab open to contribute to its growth.</p>
+            </div>
+        </main>
+    </div>
+    <!-- Load Firebase and our agent script -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="agent.js"></script>
+</body>
+</html>
